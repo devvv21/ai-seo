@@ -18,9 +18,5 @@ return [
      */
     'api_key' => env('OPENAI_API_KEY'),
 
-    /**
-     * The Organization ID for the OpenAI API.
-     * You can leave this empty if you are not part of an organization.
-     */
-    'organization' => env('OPENAI_ORGANIZATION'),
+  
 ];

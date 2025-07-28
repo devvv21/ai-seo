@@ -1,21 +1,27 @@
 <?php
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | API Key
+    |--------------------------------------------------------------------------
+    |
+    | The API key for the Gemini API.
+    |
+    */
+    'api_key' => env('GEMINI_API_KEY'),
 
     /*
     |--------------------------------------------------------------------------
-    | Gemini API Key
+    | Default Model
     |--------------------------------------------------------------------------
     |
-    | This file is for storing the credentials for the Gemini API. You can
-    | generate your API key from the Google AI Studio dashboard.
+    | The default model to use for the `generateContent` method.
+    | Find the list of available models here:
+    | https://ai.google.dev/models/gemini
     |
     */
+    'default_model' => 'gemini-2.5-flash', // <-- CHANGE THIS VALUE
 
-    /**
-     * The API key for the Gemini API.
-     * It uses the value from the GEMINI_API_KEY variable in your .env file.
-     */
-    'api_key' => env('GEMINI_API_KEY'),
-
+    // ... other settings
 ];
